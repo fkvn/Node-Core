@@ -29,6 +29,6 @@ When you try to install npm global or other modules, we might get a permission e
    * Check your **Home directory for any local or lib or include folders**, and delete any node or node_modules from there
    * Go to **/usr/local/bin** and delete any node executable
    
-  Next, run 2 commands **node -v** and **npm -v** again to make sure that node and npm are completely removed from your disk.
+   Next, run 2 commands **node -v** and **npm -v** again to make sure that node and npm are completely removed from your disk.
   
 2. After you successful removed all node and npm related files, you then install by following step from [Node and npm installation](#Node-and-npm-Installation) and [Configuring npm](#Configuring-npm).
