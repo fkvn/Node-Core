@@ -10,9 +10,12 @@ For other ways to install Node and npm, such as brew or nvm, please read further
 
 ### Configuring npm
 
-Locate the path of your npm's directory by running command **npm config get prefix**. The result should be **/usr/local**. If your result is different, it means you've installed node and npm uncorrectly. As a result, you must either remove your node and npm as the [next section](#Troubleshooting) describe or you need to change the default folder to a new one as described in the npm documentation.
+Locate the path of your npm's directory by running command **npm config get prefix**. 
 
-Then, you have to set permission of your npm's directory to the current user by running the command **sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modules,bin,share}**.
+The result should be **/usr/local**. If your result is different, it means you've installed node and npm uncorrectly. As a result, you must either remove your node and npm as the [next section](#Troubleshooting) describe or you need to change the default folder to a new one as described in the npm documentation.
+
+Then, you have to set permission of your npm's directory to the current user by running the command 
+**sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modules,bin,share}**.
 
 To test your configuration, try to install node-static package by command **npm i -g node-static**. Then run **static .**, if the terminal doesn't show "the command not found", it means you've installed it correcly.
 
