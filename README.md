@@ -17,7 +17,7 @@ The result should be **/usr/local**. If your result is different, it means you'v
 Then, you have to set permission of your npm's directory to the current user by running the command 
 **sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modules,bin,share}**.
 
-To test your configuration, try to install node-static package by command **npm i -g node-static**. Then run **static .**, if the terminal doesn't show "the command not found", it means you've installed it correcly.
+To test your configuration, try to install node-static package by command **npm i -g node-static**. Then run **static .**, if the terminal doesn't show "the command not found", it means you've installed it correcly. Otherwise, please refer the to the [next section](#Troubleshooting).
 
 ### Troubleshooting 
 
@@ -30,7 +30,9 @@ When you try to install npm global or other modules, we might get a permission e
    * Go to **/usr/local/lib** and delete any node and node_modules
    * Go to **/usr/local/include** and delete any node and node_modules directory
    * Check your **Home directory for any local or lib or include folders**, and delete any node or node_modules from there
-   * Go to **/usr/local/bin** and delete any node executable
+   * Go to **/usr/local/bin** and delete any node executable.
+   
+   **Note**: For MacOs, please make sure you empty your trash after deleting any folders or files as suggestion above. 
    
    Next, run 2 commands **node -v** and **npm -v** again to make sure that node and npm are completely removed from your disk.
   
