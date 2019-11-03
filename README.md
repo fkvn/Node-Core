@@ -31,4 +31,4 @@ When you try to install npm global or other modules, we might get a permission e
    
   Next, run 2 commands **node -v** and **npm -v** again to make sure that node and npm are completely removed from your disk.
   
-2. After you successful removed all node and npm related files, you then install by following step from [Node and npm installation](###Node-and-npm-Installation) and [Configuring npm](###Configuring-npm).
+2. After you successful removed all node and npm related files, you then install by following step from [Node and npm installation](#Node-and-npm-Installation) and [Configuring npm](###Configuring-npm).
