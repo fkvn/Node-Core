@@ -10,7 +10,7 @@ For other ways to install Node and npm, such as brew or nvm, please read further
 
 ### Configuring npm
 
-Locate the path of your npm's directory by running command **npm config get prefix**. The result should be **/usr/local**. If your result is different, it means you've installed node and npm uncorrectly. As a result, you must either remove your node and npm as the next section describe or you need to change the default folder to a new one as described in the npm documentation.
+Locate the path of your npm's directory by running command **npm config get prefix**. The result should be **/usr/local**. If your result is different, it means you've installed node and npm uncorrectly. As a result, you must either remove your node and npm as the [next section](#Troubleshooting) describe or you need to change the default folder to a new one as described in the npm documentation.
 
 Then, you have to set permission of your npm's directory to the current user by running the command **sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modules,bin,share}**.
 
@@ -31,4 +31,4 @@ When you try to install npm global or other modules, we might get a permission e
    
   Next, run 2 commands **node -v** and **npm -v** again to make sure that node and npm are completely removed from your disk.
   
-2. After you successful removed all node and npm related files, you then install by following step from [Node and npm installation](#Node-and-npm-Installation) and [Configuring npm](###Configuring-npm).
+2. After you successful removed all node and npm related files, you then install by following step from [Node and npm installation](#Node-and-npm-Installation) and [Configuring npm](#Configuring-npm).
