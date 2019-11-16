@@ -1,0 +1,36 @@
+{
+  "users": [
+    {
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "jdoe1@localhost"
+    },
+    {
+      "firstName": "Jane",
+      "lastName": "Doe",
+      "email": "jdoe2@localhost"
+    }
+  ],
+  "article1": {
+    "title": "'Using MongoDB'",
+    "text": "'Something about MongoDB'",
+    "author": "userId1",
+    "date": "2017, 2, 20",
+    "comments": [
+      {
+        "text": "'I like this article!'",
+        "author": {
+          "id": "userId2",
+          "firstName": "'Jane'",
+          "lastName": "'Doe'"
+        },
+        "date": "2017, 2, 22"
+      }
+    ],
+    "tags": [
+      "'NoSQL'",
+      "'MongoDB'",
+      "'Web Development'"
+    ]
+  }
+}
